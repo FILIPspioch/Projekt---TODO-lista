@@ -4,7 +4,7 @@ const tasks = document.querySelector("#tasks_container");
 const tb_task = document.querySelector("#zadanie");
 const btn = document.querySelector("button");
 
-const btn_delete = document.querySelectorAll(".btn_delete");
+//TODO: przechwycic checkbox i delete button
 
 //obiekty
 
@@ -17,6 +17,7 @@ let tab_obj = new Array();
 class zadanie {
   constructor(task) {
     this.task = task;
+    this.obj = this.createPosition();
   }
 
   createPosition() {
@@ -35,6 +36,14 @@ function addElement(text) {
 
   tab_obj.push(obj);
   tasks.innerHTML += element;
+
+  /*
+  for (let a of chb) {
+    if (chb.checked == true) {
+      element.remove();
+    }
+  }
+    */
 }
 
 function removeElement(index) {}
