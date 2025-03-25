@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"]
+{
+    outline: none;
+}
+
+body
+{
+    background-color: #121212;
+}
+
+#nav
+{
+    height: 2em;
+    background-color: #5d5d5d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 1em;
+}
+
+
+#nav h2
+{
+    font-family: 'Poppins';
+    font-weight: 400;
+    transition: transform 2s ;
+}
+
+#nav h2:hover
+{
+    transform: rotateY(60deg);
+}
+
+#nav button 
+{
+    width: 10%;
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+#nav button:hover
+{
+    background-color: #ffffff;
+    box-shadow: 1px 0px 5px #ffffff;
+}
+
+#nav input[type="text"]
+{
+    border: none;
+    width: fit-content;
+    padding: 2px;
+    transition: scale 2s, padding 2s ,border-radius 2s;
+}
+
+#nav input[type="text"]:focus
+{
+    box-shadow: 2px 1px 10px #b0b0b0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* stylowanie miejsca gdzie będą elementy listy */
+
+#tasks_container
+{
+    width: 50%;
+    max-height: 400px;
+    min-height: 200px;
+    overflow-y: auto;
+
+    margin-inline: auto;
+    margin-top: 20%;
+}
+
+
+/* stylowanie elementów */
+
+.btn_delete
+{
+    background-color: transparent;
+    border: none;
+}
+
+.btn_delete svg
+{
+    filter: invert();
+    transition: fill 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn_delete svg:hover
+{
+    filter: none;
+    fill: red;
+}
+
+
+.element
+{
+
+    font-family: 'Poppins';
+    font-size: large;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+    margin-inline: auto;
+    padding: 10px;
+    margin: 10px 0;
+
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid white;
+
+
+    transition: border-radius 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.element:hover
+{
+    border-radius: 16px;
+}
+
+
+.element input[type="checkbox"]
+{
+    width: auto;
+    height: auto;
+}
