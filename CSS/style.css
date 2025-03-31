@@ -140,3 +140,18 @@ body
     height: auto;
 }
 
+/* animacje */
+
+@keyframes positionDelete {
+    0%
+    {
+
+    }
+
+    100%
+    {
+        border: 2px solid red;
+        opacity: 0;
+    }
+    
+}
