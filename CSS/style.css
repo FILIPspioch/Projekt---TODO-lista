@@ -123,6 +123,8 @@ body
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid white;
+    color: #fafafa;
+    
 
 
     transition: border-radius 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -131,6 +133,7 @@ body
 .element:hover
 {
     border-radius: 16px;
+    animation: text-fade 0.6s cubic-bezier(0.19, 1, 0.22, 1) forwards ;
 }
 
 
@@ -142,16 +145,10 @@ body
 
 /* animacje */
 
-@keyframes positionDelete {
-    0%
-    {
-
-    }
-
+@keyframes text-fade {
+    0%{}
     100%
     {
-        border: 2px solid red;
-        opacity: 0;
+        color: #757575;
     }
-    
 }
